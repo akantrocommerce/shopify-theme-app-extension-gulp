@@ -13,7 +13,7 @@
 
 3) Add ```gulp-run``` by running command ```npm i gulp-run```.
    
-   _gulp-run can be found at ` at https://www.npmjs.com/package/gulp-run._
+   _gulp-run can be found at https://www.npmjs.com/package/gulp-run._
 
 **Install**
 
