@@ -1,14 +1,22 @@
-# theme-app-extension-gulp
+# shopify-theme-app-extension-gulp
 
 **Problem**
-```shopify extension serve``` command is not supported for Shopify Theme App Extensions. As a solution, I created a simple Gulp task that automates pushing theme extension file updates automatically. With this approach, you will not have to CD into the ```theme-app-extension``` directory, nor will you need to run the ```shopify extension push``` command each time you make a change to your files. 
+
+```shopify extension serve``` command is not supported for Shopify theme app extensions. As a solution, I created a simple Gulp task that automates pushing theme extension file updates automatically. With this approach, you will not have to ```cd``` to the ```theme-app-extension``` directory, nor will you need to run the ```shopify extension push``` command manually each time you make a change to your files. 
 
 **Dependancies**
+
 1) ```node```, ```npm```, and ```npx```
-2) Add ```gulp```. If Gulp is not already installed follow the quick start instructions at https://gulpjs.com/docs/en/getting-started/quick-start to install Gulp in your project.
-3) Add ```gulp-run``` by running command ```npm i gulp-run``` (https://www.npmjs.com/package/gulp-run) 
+2) Add ```gulp```.
+   
+   _If gulp is not already installed follow the quick start instructions at https://gulpjs.com/docs/en/getting-started/quick-start to install Gulp in your project._
+
+3) Add ```gulp-run``` by running command ```npm i gulp-run```.
+   
+   _gulp-run can be found at ` at https://www.npmjs.com/package/gulp-run._
 
 **Install**
+
 1) Add ```gulpfile.js``` to root of your project.
 2) Add ```"extension": "gulp"``` && ```"push:extension": "(cd ./theme-app-extension; shopify extension push)"``` commands to ```package.json``` file scripts.
 
@@ -21,7 +29,7 @@
    ```
    
 3) Update your files pathes in the ```watcher();``` function. 
-   By default, we watch for ```theme-app-extension/assets/*```, ```theme-app-extension/blocks/*'``` and ```theme-app-extension/snippets/*```. You may add or change these as direcper your requirements.
+   By default, we watch for ```theme-app-extension/assets/*```, ```theme-app-extension/blocks/*'``` and ```theme-app-extension/snippets/*```. You may add or change these depending upon your requirements.
    
    **example:**
    ```
@@ -34,6 +42,7 @@
    ```
 
 **Usage**
+
 1) Open a new terminal in your project root and run ```npm run push:extension``` _(Note: You stay in the main app project root, you do not need to ```cd``` into ```theme-app-extension```)_
 2) Upon save the script will now push theme extension updates to Shopify accordingly. 
 
