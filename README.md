@@ -2,8 +2,8 @@
 
 **Dependancies**
 1) ```node```, ```npm```, and ```npx```
-2) If Gulp is not already installed follow the quick start instructions at https://gulpjs.com/docs/en/getting-started/quick-start to install Gulp in your project.
-3) Install ```gulp-run``` by running command ```npm i gulp-run``` (https://www.npmjs.com/package/gulp-run) 
+2) Add ```gulp```. If Gulp is not already installed follow the quick start instructions at https://gulpjs.com/docs/en/getting-started/quick-start to install Gulp in your project.
+3) Add ```gulp-run``` by running command ```npm i gulp-run``` (https://www.npmjs.com/package/gulp-run) 
 
 **Install**
 1) Add ```gulpfile.js``` to root of your project.
