@@ -43,7 +43,7 @@
 
 **Usage**
 
-1) Open a new terminal in your project root and run ```npm run push:extension``` _(Note: You stay in the main app project root, you do not need to ```cd``` into ```theme-app-extension```)_
+1) Open a new terminal in your project root and run ```npm run push:extension``` To run the Gulp process to automatically push, run ```npm run extension```. _(Note: You stay in the main app project root, you do not need to ```cd``` into ```theme-app-extension```)_
 2) Upon save the script will now push theme extension updates to Shopify accordingly. 
 
 If you are already are using Gulp, skip install step #1 and download & include the script into your existing ```gulpfile.js```. Then continue from steps #2 onward.
